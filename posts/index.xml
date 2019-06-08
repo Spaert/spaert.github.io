@@ -1,0 +1,80 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Hello World</title>
+        <link>https://spaert.github.io/posts/</link>
+        <description>Recent content in Posts on Hello World</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <atom:link href="https://spaert.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Insights into Bacterial Genome Sequence Analysis</title>
+            <link>https://spaert.github.io/posts/summertranning/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            
+            <guid>https://spaert.github.io/posts/summertranning/</guid>
+            <description>Today goals  Introduction - A little about me, lab(gossip)
+ Things you should know before assembly
+ Fastq format Fasta format GC-content  Step to bacterial sequencing analysis
+  Introduction - A little about me, lab(gossip) 名字： 施佩妏 :smile:
+興趣：看美劇、實況、吃雞肉飯
+畢業前目標：把嘉義雞肉飯吃一遍
+Lab 淺規則：兩週報一次、問問題
+Things you should know before assembly Fastq format @cc3e68c4-b53d-43da-be7e-b961113007e2 -&amp;gt; sequence name ATCCGGAATCGGTTACTGTTGGGAACCTTTGC -&amp;gt; sequence + -&amp;gt; quality line break #%(*))++.2/148447;7+001./18-7-,,30&amp;amp;*2 -&amp;gt; quality score  Fasta format &amp;gt;tig00000001	-&amp;gt; sequence name TGATAAAAGTATTCATATAATCTCCTATCATTTCAAAATTTAAT -&amp;gt; sequence &amp;gt;tig00000002	ATATTAGTGTGTCTATTTTATGGGGCTAGGAAAGGAGGTACATT  GC-content the percentage of nitrogenous bases on a DNA or RNA molecule that are either guanine or cytosine $$ \frac{G+C}{A+T+G+C} \times 100 \% $$</description>
+            <content type="html"><![CDATA[
+
+<h2 id="today-goals">Today goals</h2>
+
+<ul>
+<li><p>Introduction - A little about me, lab(<del>gossip</del>)</p></li>
+
+<li><p>Things you should know before assembly</p>
+
+<ol>
+<li><a href="#Fastq-format">Fastq format</a></li>
+<li><a href="#Fasta-format">Fasta format</a></li>
+<li><a href="#GC-content">GC-content</a></li>
+</ol></li>
+
+<li><p>Step to bacterial sequencing analysis</p></li>
+</ul>
+
+<h2 id="introduction-a-little-about-me-lab-gossip">Introduction - A little about me, lab(<del>gossip</del>)</h2>
+
+<p>名字： 施佩妏 :smile:</p>
+
+<p>興趣：看美劇、實況、吃雞肉飯</p>
+
+<p>畢業前目標：把嘉義雞肉飯吃一遍</p>
+
+<p>Lab <del>淺</del>規則：兩週報一次、問問題</p>
+
+<h2 id="things-you-should-know-before-assembly">Things you should know before assembly</h2>
+
+<h4 id="fastq-format">Fastq format</h4>
+
+<pre><code>@cc3e68c4-b53d-43da-be7e-b961113007e2          -&gt; sequence name
+ATCCGGAATCGGTTACTGTTGGGAACCTTTGC               -&gt; sequence
++                                              -&gt; quality line break
+#%(*))++.2/148447;7+001./18-7-,,30&amp;*2          -&gt; quality score
+</code></pre>
+
+<h4 id="fasta-format">Fasta format</h4>
+
+<pre><code>&gt;tig00000001																	 -&gt; sequence name
+TGATAAAAGTATTCATATAATCTCCTATCATTTCAAAATTTAAT   -&gt; sequence 
+&gt;tig00000002																	 
+ATATTAGTGTGTCTATTTTATGGGGCTAGGAAAGGAGGTACATT
+</code></pre>
+
+<h4 id="gc-content">GC-content</h4>
+
+<p>the percentage of <a href="https://en.wikipedia.org/wiki/Nitrogenous_bases">nitrogenous bases</a> on a <a href="https://en.wikipedia.org/wiki/DNA">DNA</a> or <a href="https://en.wikipedia.org/wiki/RNA">RNA</a> molecule that are either <a href="https://en.wikipedia.org/wiki/Guanine">guanine</a> or <a href="https://en.wikipedia.org/wiki/Cytosine">cytosine</a>
+$$
+\frac{G+C}{A+T+G+C} \times 100 \%
+$$</p>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

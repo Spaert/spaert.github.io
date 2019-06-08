@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="map[name:Pei-Wen Shih]">
+<meta name="description"
+    content="Today goals  Introduction - A little about me, lab(gossip)
+ Things you should know before assembly
+ Fastq format Fasta format GC-content  Step to bacterial sequencing analysis
+  Introduction - A little about me, lab(gossip) 名字： 施佩妏 :smile:
+興趣：看美劇、實況、吃雞肉飯
+畢業前目標：把嘉義雞肉飯吃一遍
+Lab 淺規則：兩週報一次、問問題
+Things you should know before assembly Fastq format @cc3e68c4-b53d-43da-be7e-b961113007e2 -&amp;gt; sequence name ATCCGGAATCGGTTACTGTTGGGAACCTTTGC -&amp;gt; sequence &#43; -&amp;gt; quality line break #%(*))&#43;&#43;.2/148447;7&#43;001./18-7-,,30&amp;amp;*2 -&amp;gt; quality score  Fasta format &amp;gt;tig00000001	-&amp;gt; sequence name TGATAAAAGTATTCATATAATCTCCTATCATTTCAAAATTTAAT -&amp;gt; sequence &amp;gt;tig00000002	ATATTAGTGTGTCTATTTTATGGGGCTAGGAAAGGAGGTACATT  GC-content the percentage of nitrogenous bases on a DNA or RNA molecule that are either guanine or cytosine $$ \frac{G&#43;C}{A&#43;T&#43;G&#43;C} \times 100 \% $$" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://spaert.github.io/posts/summertranning/" />
+
+
+<title>
+    
+    Insights into Bacterial Genome Sequence Analysis :: Hello World 
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.d90905eb29b71569a516566cd9662312bee9ab021c760de6949cdc92d6688be9.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627">
+<meta itemprop="name" content="Insights into Bacterial Genome Sequence Analysis">
+<meta itemprop="description" content="Today goals  Introduction - A little about me, lab(gossip)
+ Things you should know before assembly
+ Fastq format Fasta format GC-content  Step to bacterial sequencing analysis
+  Introduction - A little about me, lab(gossip) 名字： 施佩妏 :smile:
+興趣：看美劇、實況、吃雞肉飯
+畢業前目標：把嘉義雞肉飯吃一遍
+Lab 淺規則：兩週報一次、問問題
+Things you should know before assembly Fastq format @cc3e68c4-b53d-43da-be7e-b961113007e2 -&gt; sequence name ATCCGGAATCGGTTACTGTTGGGAACCTTTGC -&gt; sequence &#43; -&gt; quality line break #%(*))&#43;&#43;.2/148447;7&#43;001./18-7-,,30&amp;*2 -&gt; quality score  Fasta format &gt;tig00000001	-&gt; sequence name TGATAAAAGTATTCATATAATCTCCTATCATTTCAAAATTTAAT -&gt; sequence &gt;tig00000002	ATATTAGTGTGTCTATTTTATGGGGCTAGGAAAGGAGGTACATT  GC-content the percentage of nitrogenous bases on a DNA or RNA molecule that are either guanine or cytosine $$ \frac{G&#43;C}{A&#43;T&#43;G&#43;C} \times 100 \% $$">
+
+
+
+<meta itemprop="wordCount" content="98">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://spaert.github.io"/>
+
+<meta name="twitter:title" content="Insights into Bacterial Genome Sequence Analysis"/>
+<meta name="twitter:description" content="Today goals  Introduction - A little about me, lab(gossip)
+ Things you should know before assembly
+ Fastq format Fasta format GC-content  Step to bacterial sequencing analysis
+  Introduction - A little about me, lab(gossip) 名字： 施佩妏 :smile:
+興趣：看美劇、實況、吃雞肉飯
+畢業前目標：把嘉義雞肉飯吃一遍
+Lab 淺規則：兩週報一次、問問題
+Things you should know before assembly Fastq format @cc3e68c4-b53d-43da-be7e-b961113007e2 -&gt; sequence name ATCCGGAATCGGTTACTGTTGGGAACCTTTGC -&gt; sequence &#43; -&gt; quality line break #%(*))&#43;&#43;.2/148447;7&#43;001./18-7-,,30&amp;*2 -&gt; quality score  Fasta format &gt;tig00000001	-&gt; sequence name TGATAAAAGTATTCATATAATCTCCTATCATTTCAAAATTTAAT -&gt; sequence &gt;tig00000002	ATATTAGTGTGTCTATTTTATGGGGCTAGGAAAGGAGGTACATT  GC-content the percentage of nitrogenous bases on a DNA or RNA molecule that are either guanine or cytosine $$ \frac{G&#43;C}{A&#43;T&#43;G&#43;C} \times 100 \% $$"/>
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$cd /home/spaert</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://spaert.github.io/about">About</a></li><li><a href="https://spaert.github.io/posts">Blog</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>One minute
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="https://spaert.github.io/posts/summertranning/">Insights into Bacterial Genome Sequence Analysis</a></h1>
+
+            
+
+            <div class="post-content">
+                
+
+<h2 id="today-goals">Today goals</h2>
+
+<ul>
+<li><p>Introduction - A little about me, lab(<del>gossip</del>)</p></li>
+
+<li><p>Things you should know before assembly</p>
+
+<ol>
+<li><a href="#Fastq-format">Fastq format</a></li>
+<li><a href="#Fasta-format">Fasta format</a></li>
+<li><a href="#GC-content">GC-content</a></li>
+</ol></li>
+
+<li><p>Step to bacterial sequencing analysis</p></li>
+</ul>
+
+<h2 id="introduction-a-little-about-me-lab-gossip">Introduction - A little about me, lab(<del>gossip</del>)</h2>
+
+<p>名字： 施佩妏 :smile:</p>
+
+<p>興趣：看美劇、實況、吃雞肉飯</p>
+
+<p>畢業前目標：把嘉義雞肉飯吃一遍</p>
+
+<p>Lab <del>淺</del>規則：兩週報一次、問問題</p>
+
+<h2 id="things-you-should-know-before-assembly">Things you should know before assembly</h2>
+
+<h4 id="fastq-format">Fastq format</h4>
+
+<pre><code>@cc3e68c4-b53d-43da-be7e-b961113007e2          -&gt; sequence name
+ATCCGGAATCGGTTACTGTTGGGAACCTTTGC               -&gt; sequence
++                                              -&gt; quality line break
+#%(*))++.2/148447;7+001./18-7-,,30&amp;*2          -&gt; quality score
+</code></pre>
+
+<h4 id="fasta-format">Fasta format</h4>
+
+<pre><code>&gt;tig00000001																	 -&gt; sequence name
+TGATAAAAGTATTCATATAATCTCCTATCATTTCAAAATTTAAT   -&gt; sequence 
+&gt;tig00000002																	 
+ATATTAGTGTGTCTATTTTATGGGGCTAGGAAAGGAGGTACATT
+</code></pre>
+
+<h4 id="gc-content">GC-content</h4>
+
+<p>the percentage of <a href="https://en.wikipedia.org/wiki/Nitrogenous_bases">nitrogenous bases</a> on a <a href="https://en.wikipedia.org/wiki/DNA">DNA</a> or <a href="https://en.wikipedia.org/wiki/RNA">RNA</a> molecule that are either <a href="https://en.wikipedia.org/wiki/Guanine">guanine</a> or <a href="https://en.wikipedia.org/wiki/Cytosine">cytosine</a>
+$$
+\frac{G+C}{A+T+G+C} \times 100 \%
+$$</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>98 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>1019-01-8 08:00 &#43;0800</p>
+        </div>
+
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+            
+            <span></span>
+            <span> <a href="https://spaert.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+
+
+
+    </body>
+</html>

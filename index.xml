@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello World</title>
+    <link>https://spaert.github.io/</link>
+    <description>Recent content on Hello World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 08 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://spaert.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Insights into Bacterial Genome Sequence Analysis</title>
+      <link>https://spaert.github.io/posts/summertranning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spaert.github.io/posts/summertranning/</guid>
+      <description>Today goals  Introduction - A little about me, lab(gossip)
+ Things you should know before assembly
+ Fastq format Fasta format GC-content  Step to bacterial sequencing analysis
+  Introduction - A little about me, lab(gossip) 名字： 施佩妏 :smile:
+興趣：看美劇、實況、吃雞肉飯
+畢業前目標：把嘉義雞肉飯吃一遍
+Lab 淺規則：兩週報一次、問問題
+Things you should know before assembly Fastq format @cc3e68c4-b53d-43da-be7e-b961113007e2 -&amp;gt; sequence name ATCCGGAATCGGTTACTGTTGGGAACCTTTGC -&amp;gt; sequence + -&amp;gt; quality line break #%(*))++.2/148447;7+001./18-7-,,30&amp;amp;*2 -&amp;gt; quality score  Fasta format &amp;gt;tig00000001	-&amp;gt; sequence name TGATAAAAGTATTCATATAATCTCCTATCATTTCAAAATTTAAT -&amp;gt; sequence &amp;gt;tig00000002	ATATTAGTGTGTCTATTTTATGGGGCTAGGAAAGGAGGTACATT  GC-content the percentage of nitrogenous bases on a DNA or RNA molecule that are either guanine or cytosine $$ \frac{G+C}{A+T+G+C} \times 100 \% $$</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://spaert.github.io/about/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://spaert.github.io/about/</guid>
+      <description>Hugo is the world’s fastest framework for building websites. It is written in Go.
+It makes use of a variety of open source projects including:
+ https://github.com/russross/blackfriday https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper  Learn more and contribute on GitHub.</description>
+    </item>
+    
+  </channel>
+</rss>
