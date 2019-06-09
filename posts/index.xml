@@ -10,18 +10,18 @@
         
         <item>
             <title>Insights into Bacterial Genome Sequence Analysis</title>
-            <link>https://spaert.github.io/posts/summertranning/</link>
+            <link>https://spaert.github.io/posts/summer-training/</link>
             <pubDate>Sat, 08 Jun 2019 09:00:00 +0000</pubDate>
             
-            <guid>https://spaert.github.io/posts/summertranning/</guid>
+            <guid>https://spaert.github.io/posts/summer-training/</guid>
             <description>Today goals  Introduction - A little about me, lab(gossip)
  Things you should know before assembly
- Fastq format Fasta format GC-content  Step to bacterial sequencing analysis
+ Fastq format Fasta format GC- content Status of genome  Step to bacterial sequencing analysis
   Introduction - A little about me, lab(gossip) 名字： 施佩妏 😄
 興趣：看美劇、實況、吃雞肉飯
 畢業前目標：把嘉義雞肉飯吃一遍
 Lab 淺規則：兩週報一次、問問題
-Things you should know before assembly Fastq format @cc3e68c4-b53d-43da-be7e-b961113007e2 -&amp;gt; sequence name ATCCGGAATCGGTTACTGTTGGGAACCTTTGC -&amp;gt; sequence + -&amp;gt; quality line break #%(*))++.2/148447;7+001./18-7-,,30&amp;amp;*2 -&amp;gt; quality score  Fasta format &amp;gt;tig00000001	-&amp;gt; sequence name TGATAAAAGTATTCATATAATCTCCTATCATTTCAAAATTTAAT -&amp;gt; sequence &amp;gt;tig00000002	ATATTAGTGTGTCTATTTTATGGGGCTAGGAAAGGAGGTACATT  GC-content the percentage of nitrogenous bases on a DNA or RNA molecule that are either guanine or cytosine $$ \frac{G+C}{A+T+G+C} \times 100 \% $$</description>
+Things you should know before assembly Fastq format @cc3e68c4-b53d-43da-be7e-b961113007e2 -&amp;gt; sequence name ATCCGGAATCGGTTACTGTTGGGAACCTTTGC -&amp;gt; sequence + -&amp;gt; quality line break #%(*))++.</description>
             <content type="html"><![CDATA[
 
 <h2 id="today-goals">Today goals</h2>
@@ -32,9 +32,10 @@ Things you should know before assembly Fastq format @cc3e68c4-b53d-43da-be7e-b96
 <li><p>Things you should know before assembly</p>
 
 <ol>
-<li><a href="#Fastq-format">Fastq format</a></li>
-<li><a href="#Fasta-format">Fasta format</a></li>
-<li><a href="#GC-content">GC-content</a></li>
+<li>Fastq format</li>
+<li>Fasta format</li>
+<li>GC- content</li>
+<li>Status of genome</li>
 </ol></li>
 
 <li><p>Step to bacterial sequencing analysis</p></li>
@@ -62,7 +63,7 @@ ATCCGGAATCGGTTACTGTTGGGAACCTTTGC               -&gt; sequence
 
 <h4 id="fasta-format">Fasta format</h4>
 
-<pre><code>&gt;tig00000001																	 -&gt; sequence name
+<pre><code>&gt;tig00000001				           -&gt; sequence name
 TGATAAAAGTATTCATATAATCTCCTATCATTTCAAAATTTAAT   -&gt; sequence 
 &gt;tig00000002																	 
 ATATTAGTGTGTCTATTTTATGGGGCTAGGAAAGGAGGTACATT
@@ -74,6 +75,24 @@ ATATTAGTGTGTCTATTTTATGGGGCTAGGAAAGGAGGTACATT
 $$
 \frac{G+C}{A+T+G+C} \times 100 \%
 $$</p>
+
+<h4 id="satuts-of-genome">Satuts of genome</h4>
+
+<p><img src="http://ecoevo.unit.oist.jp/lab/wp-content/uploads/2013/08/GenomeAssembly.png" alt="Alt text" /></p>
+
+<h5 id="1-contig">1. contig</h5>
+
+<p>A <strong>contig</strong>  is a set of overlapping DNA segments that together represent a <a href="https://en.wikipedia.org/wiki/Consensus_sequence">consensus region of DNA</a>.</p>
+
+<h5 id="2-scaffold">2. scaffold</h5>
+
+<p>​   To bridge the gaps between the two contigs called scaffold.</p>
+
+<h5 id="3-complete">3. complete</h5>
+
+<p>​ a <strong>circular</strong> genome</p>
+
+<p><img src="https://albertsenlab.org/wp-content/uploads/2017/11/longreadsVSshortreads.png" alt="Alt text" /></p>
 ]]></content>
         </item>
         
