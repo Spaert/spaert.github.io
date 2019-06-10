@@ -6,7 +6,7 @@
     <description>Recent content in third generation sequence on Hello World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 08 Jun 2019 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jun 2019 09:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://spaert.github.io/tags/third-generation-sequence/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Insights into Bacterial Genome Sequence Analysis</title>
       <link>https://spaert.github.io/posts/insights-into-bacterial-genome-sequence-analysis/</link>
-      <pubDate>Sat, 08 Jun 2019 09:00:00 +0000</pubDate>
+      <pubDate>Fri, 07 Jun 2019 09:00:00 +0000</pubDate>
       
       <guid>https://spaert.github.io/posts/insights-into-bacterial-genome-sequence-analysis/</guid>
       <description>Today goals  Introduction - A little about me, lab(gossip)
@@ -24,7 +24,8 @@
 興趣：看美劇、實況、吃雞肉飯
 畢業前目標：把嘉義雞肉飯吃一遍
 Lab 淺規則：兩週報一次、問問題
-Things you should know before assembly Fastq format @cc3e68c4-b53d-43da-be7e-b961113007e2 -&amp;gt; sequence name ATCCGGAATCGGTTACTGTTGGGAACCTTTGC -&amp;gt; sequence + -&amp;gt; quality line break #%(*))++.</description>
+Things you should know before assembly Fastq format start with @
+@cc3e68c4-b53d-43da-be7e-b961113007e2 -&amp;gt; sequence name ATCCGGAATCGGTTACTGTTGGGAACCTTTGC -&amp;gt; sequence + -&amp;gt; quality line break #%(*))++.</description>
     </item>
     
   </channel>

@@ -5,13 +5,73 @@
         <description>Recent content in Posts on Hello World</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sat, 08 Jun 2019 09:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 11 Jun 2019 02:16:24 +0800</lastBuildDate>
         <atom:link href="https://spaert.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>SOP of bacteria sequencing analysis</title>
+            <link>https://spaert.github.io/posts/sop-of-bacteria-sequencing-analysis/</link>
+            <pubDate>Tue, 11 Jun 2019 02:16:24 +0800</pubDate>
+            
+            <guid>https://spaert.github.io/posts/sop-of-bacteria-sequencing-analysis/</guid>
+            <description>Quality control
+ QC tools (FastQC, MultiQC &amp;hellip;)
+ Is coverage enough ?
+ Is length read length enough ?
+ Is there contamination ?
+  Assembly
+ Assembler tools (Canu, Unicycler, Flye, Ra …)
+ Genome Polishing (Racon, medaka, nanopolish &amp;hellip;)
+ Plasmid check(BLAST)
+  Genome annotation
+ NCBI annotation
+ COG analysis for protein functions
+  16S rRNA/whole genome phylogenetic trees
+ Antibiotic-resistant gene prediction</description>
+            <content type="html"><![CDATA[<ol>
+<li><p>Quality control</p>
+
+<ul>
+<li><p>QC tools (<a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">FastQC</a>, <a href="https://multiqc.info/">MultiQC</a> &hellip;)</p></li>
+
+<li><p>Is coverage enough ?</p></li>
+
+<li><p>Is length  read length enough ?</p></li>
+
+<li><p>Is there contamination ?</p></li>
+</ul></li>
+
+<li><p>Assembly</p>
+
+<ul>
+<li><p>Assembler tools (<a href="https://canu.readthedocs.io/en/latest/quick-start.html">Canu</a>, <a href="https://github.com/rrwick/Unicycler">Unicycler</a>, <a href="https://github.com/fenderglass/Flye">Flye</a>, <a href="https://github.com/lbcb-sci/ra">Ra</a> …)</p></li>
+
+<li><p>Genome Polishing (<a href="https://github.com/isovic/racon">Racon</a>,  <a href="https://nanoporetech.github.io/medaka/index.html">medaka</a>, <a href="https://nanopolish.readthedocs.io/en/latest/quickstart_consensus.html">nanopolish</a> &hellip;)</p></li>
+
+<li><p>Plasmid check(<a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">BLAST</a>)</p></li>
+</ul></li>
+
+<li><p>Genome annotation</p>
+
+<ul>
+<li><p>NCBI annotation</p></li>
+
+<li><p>COG analysis for protein functions</p></li>
+</ul></li>
+
+<li><p>16S rRNA/whole genome phylogenetic trees</p></li>
+
+<li><p>Antibiotic-resistant gene prediction</p></li>
+
+<li><p>Virulence gene prediction</p></li>
+</ol>
+]]></content>
+        </item>
         
         <item>
             <title>Insights into Bacterial Genome Sequence Analysis</title>
             <link>https://spaert.github.io/posts/insights-into-bacterial-genome-sequence-analysis/</link>
-            <pubDate>Sat, 08 Jun 2019 09:00:00 +0000</pubDate>
+            <pubDate>Fri, 07 Jun 2019 09:00:00 +0000</pubDate>
             
             <guid>https://spaert.github.io/posts/insights-into-bacterial-genome-sequence-analysis/</guid>
             <description>Today goals  Introduction - A little about me, lab(gossip)
@@ -21,10 +81,11 @@
 興趣：看美劇、實況、吃雞肉飯
 畢業前目標：把嘉義雞肉飯吃一遍
 Lab 淺規則：兩週報一次、問問題
-Things you should know before assembly Fastq format @cc3e68c4-b53d-43da-be7e-b961113007e2 -&amp;gt; sequence name ATCCGGAATCGGTTACTGTTGGGAACCTTTGC -&amp;gt; sequence + -&amp;gt; quality line break #%(*))++.</description>
+Things you should know before assembly Fastq format start with @
+@cc3e68c4-b53d-43da-be7e-b961113007e2 -&amp;gt; sequence name ATCCGGAATCGGTTACTGTTGGGAACCTTTGC -&amp;gt; sequence + -&amp;gt; quality line break #%(*))++.</description>
             <content type="html"><![CDATA[
 
-<h2 id="today-goals">Today goals</h2>
+<h1 id="today-goals">Today goals</h1>
 
 <ul>
 <li><p>Introduction - A little about me, lab(<del>gossip</del>)</p></li>
@@ -41,7 +102,7 @@ Things you should know before assembly Fastq format @cc3e68c4-b53d-43da-be7e-b96
 <li><p>Step to bacterial sequencing analysis</p></li>
 </ul>
 
-<h2 id="introduction-a-little-about-me-lab-gossip">Introduction - A little about me, lab(<del>gossip</del>)</h2>
+<h1 id="introduction-a-little-about-me-lab-gossip">Introduction - A little about me, lab(<del>gossip</del>)</h1>
 
 <p>名字： 施佩妏 😄</p>
 
@@ -51,9 +112,11 @@ Things you should know before assembly Fastq format @cc3e68c4-b53d-43da-be7e-b96
 
 <p>Lab <del>淺</del>規則：兩週報一次、問問題</p>
 
-<h2 id="things-you-should-know-before-assembly">Things you should know before assembly</h2>
+<h1 id="things-you-should-know-before-assembly">Things you should know before assembly</h1>
 
-<h4 id="fastq-format">Fastq format</h4>
+<h2 id="fastq-format">Fastq format</h2>
+
+<p>start with <code>@</code></p>
 
 <pre><code>@cc3e68c4-b53d-43da-be7e-b961113007e2          -&gt; sequence name
 ATCCGGAATCGGTTACTGTTGGGAACCTTTGC               -&gt; sequence
@@ -61,7 +124,9 @@ ATCCGGAATCGGTTACTGTTGGGAACCTTTGC               -&gt; sequence
 #%(*))++.2/148447;7+001./18-7-,,30&amp;*2          -&gt; quality score
 </code></pre>
 
-<h4 id="fasta-format">Fasta format</h4>
+<h2 id="fasta-format">Fasta format</h2>
+
+<p>start with <code>&gt;</code></p>
 
 <pre><code>&gt;tig00000001				           -&gt; sequence name
 TGATAAAAGTATTCATATAATCTCCTATCATTTCAAAATTTAAT   -&gt; sequence 
@@ -69,30 +134,86 @@ TGATAAAAGTATTCATATAATCTCCTATCATTTCAAAATTTAAT   -&gt; sequence
 ATATTAGTGTGTCTATTTTATGGGGCTAGGAAAGGAGGTACATT
 </code></pre>
 
-<h4 id="gc-content">GC-content</h4>
+<h2 id="gc-content">GC-content</h2>
 
 <p>the percentage of <a href="https://en.wikipedia.org/wiki/Nitrogenous_bases">nitrogenous bases</a> on a <a href="https://en.wikipedia.org/wiki/DNA">DNA</a> or <a href="https://en.wikipedia.org/wiki/RNA">RNA</a> molecule that are either <a href="https://en.wikipedia.org/wiki/Guanine">guanine</a> or <a href="https://en.wikipedia.org/wiki/Cytosine">cytosine</a>
 $$
 \frac{G+C}{A+T+G+C} \times 100 \%
 $$</p>
 
-<h4 id="satuts-of-genome">Satuts of genome</h4>
+<h2 id="satuts-of-genome">Satuts of genome</h2>
 
-<p><img src="http://ecoevo.unit.oist.jp/lab/wp-content/uploads/2013/08/GenomeAssembly.png" alt="Alt text" /></p>
+<p><img src="http://ecoevo.unit.oist.jp/lab/wp-content/uploads/2013/08/GenomeAssembly.png" alt="genome status" /></p>
 
-<h5 id="1-contig">1. contig</h5>
+<h3 id="1-contig">1. contig</h3>
 
 <p>A <strong>contig</strong>  is a set of overlapping DNA segments that together represent a <a href="https://en.wikipedia.org/wiki/Consensus_sequence">consensus region of DNA</a>.</p>
 
-<h5 id="2-scaffold">2. scaffold</h5>
+<h3 id="2-scaffold">2. scaffold</h3>
 
-<p>​   To bridge the gaps between the two contigs called scaffold.</p>
+<p>To bridge the gaps between the two contigs called scaffold.</p>
 
-<h5 id="3-complete">3. complete</h5>
+<h3 id="3-complete">3. complete</h3>
 
-<p>​ a <strong>circular</strong> genome</p>
+<p>A <strong>circular</strong> genome</p>
 
-<p><img src="https://albertsenlab.org/wp-content/uploads/2017/11/longreadsVSshortreads.png" alt="Alt text" /></p>
+<p><img src="https://albertsenlab.org/wp-content/uploads/2017/11/longreadsVSshortreads.png" alt="complete genome" /></p>
+
+<h1 id="step-to-bacterial-sequencing-analysis">Step to bacterial sequencing analysis</h1>
+
+<p><img src="https://f1000researchdata.s3.amazonaws.com/manuscripts/14771/860b5457-c42e-40df-9829-10ecb2c4b092_figure2.gif" alt="workflow" /></p>
+
+<h2 id="step-1-quality-control-assessing-the-quality-of-tgs">Step 1. Quality Control - Assessing the quality of TGS</h2>
+
+<h3 id="1-1-checking-raw-read-statistics">1.1 Checking raw read statistics</h3>
+
+<p>Tools : <a href="https://github.com/bcgsc/abyss">abyss-fac</a></p>
+
+<pre><code>$ abyss-fac -t 1 read.fastq contig.fasta
+</code></pre>
+
+<p><img src="/img/read-abyssfac.png" alt="read-abyssfac" /></p>
+
+<ul>
+<li><p>n : Number of raw read</p></li>
+
+<li><p>N50 : A value that present 50% of sorted read set</p></li>
+</ul>
+
+<p><img src="https://i0.wp.com/www.molecularecologist.com/wp-content/uploads/2017/03/Figure1b.jpg?w=699&amp;ssl=1" alt="Alt text" /></p>
+
+<ul>
+<li><p>Max: longest read length</p></li>
+
+<li><p>Sum: Total read length</p></li>
+</ul>
+
+<h3 id="1-2-qc-report">1.2 QC report</h3>
+
+<p>Tools : <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">FastQC</a></p>
+
+<pre><code>$ fastqc -f read.fastq -o outdir
+</code></pre>
+
+<h2 id="step-2-trimming-filtering-data-preprocessing-of-raw-data-optional">Step 2. Trimming Filtering Data - Preprocessing of raw data (optional)</h2>
+
+<h3 id="2-1-filter-raw-read">2.1 Filter raw read</h3>
+
+<p>Tools : <a href="https://github.com/rrwick/Filtlong">filtlong</a></p>
+
+<p>Usually used in <strong>coverage too high</strong>, <strong>trim too short reads</strong>, and want to <strong>keep raw read in between a range</strong></p>
+
+<h3 id="2-2-demultiplexing-trimming-adapter-barcode">2.2 Demultiplexing, Trimming adapter (barcode)</h3>
+
+<p>Tools : <a href="https://github.com/rrwick/Porechop">porechop</a></p>
+
+<pre><code>$ porechop -i reads.fastq -o output.fastq # adapter trimming
+$ porechop -i reads.fastq -b output.fastq # demultiplexing 
+</code></pre>
+
+<h2 id="step-3-sequence-assembly-long-read-genome-assembly">Step 3. Sequence Assembly - Long read genome assembly</h2>
+
+<h2 id="step-4-assembly-validation">Step 4. Assembly Validation</h2>
 ]]></content>
         </item>
         

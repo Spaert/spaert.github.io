@@ -6,15 +6,24 @@
     <description>Recent content in Tags on Hello World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 08 Jun 2019 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Jun 2019 02:16:24 +0800</lastBuildDate>
     
 	<atom:link href="https://spaert.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>sequencing analysis</title>
+      <link>https://spaert.github.io/tags/sequencing-analysis/</link>
+      <pubDate>Tue, 11 Jun 2019 02:16:24 +0800</pubDate>
+      
+      <guid>https://spaert.github.io/tags/sequencing-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>genome assembly</title>
       <link>https://spaert.github.io/tags/genome-assembly/</link>
-      <pubDate>Sat, 08 Jun 2019 09:00:00 +0000</pubDate>
+      <pubDate>Fri, 07 Jun 2019 09:00:00 +0000</pubDate>
       
       <guid>https://spaert.github.io/tags/genome-assembly/</guid>
       <description></description>
@@ -23,7 +32,7 @@
     <item>
       <title>third generation sequence</title>
       <link>https://spaert.github.io/tags/third-generation-sequence/</link>
-      <pubDate>Sat, 08 Jun 2019 09:00:00 +0000</pubDate>
+      <pubDate>Fri, 07 Jun 2019 09:00:00 +0000</pubDate>
       
       <guid>https://spaert.github.io/tags/third-generation-sequence/</guid>
       <description></description>
