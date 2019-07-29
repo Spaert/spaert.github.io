@@ -57,9 +57,9 @@ Things you should know before assembly Fastq format start with @
 @cc3e68c4-b53d-43da-be7e-b961113007e2 -&gt; sequence name ATCCGGAATCGGTTACTGTTGGGAACCTTTGC -&gt; sequence &#43; -&gt; quality line break #%(*))&#43;&#43;.">
 
 
-<meta itemprop="datePublished" content="2019-06-07T09:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-06-07T09:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="289">
+<meta itemprop="datePublished" content="2019-06-09T21:51:13&#43;08:00" />
+<meta itemprop="dateModified" content="2019-06-09T21:51:13&#43;08:00" />
+<meta itemprop="wordCount" content="369">
 
 
 
@@ -81,7 +81,7 @@ Things you should know before assembly Fastq format start with @
 
 
 
-<meta property="article:published_time" content="2019-06-07 09:00:00 &#43;0000 UTC" />
+<meta property="article:published_time" content="2019-06-09 21:51:13 &#43;0800 CST" />
 
 
 
@@ -177,8 +177,17 @@ Things you should know before assembly Fastq format start with @
 <li><a href="#2-1-filter-raw-read">2.1 Filter raw read</a></li>
 <li><a href="#2-2-demultiplexing-trimming-adapter-barcode">2.2 Demultiplexing, Trimming adapter (barcode)</a></li>
 </ul></li>
-<li><a href="#step-3-sequence-assembly-long-read-genome-assembly">Step 3. Sequence Assembly - Long read genome assembly</a></li>
-<li><a href="#step-4-assembly-validation">Step 4. Assembly Validation</a></li>
+<li><a href="#step-3-sequence-assembly-long-read-genome-assembly">Step 3. Sequence Assembly - Long read genome assembly</a>
+<ul>
+<li><a href="#3-1-de-novo-assembly">3.1 De novo assembly</a></li>
+</ul></li>
+<li><a href="#step-4-assembly-validation">Step 4. Assembly Validation</a>
+<ul>
+<li><a href="#4-1-assembly-evaluation">4.1 Assembly evaluation</a></li>
+<li><a href="#4-2-assembly-status-graph">4.2 Assembly status graph</a></li>
+<li><a href="#4-3-sequence-similarity-search">4.3 Sequence Similarity Search</a></li>
+<li><a href="#4-4-quality-of-genomes">4.4 Quality of genomes</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -260,7 +269,7 @@ $$</p>
 
 <h3 id="3-complete">3. complete</h3>
 
-<p>A <strong>circular</strong> genome</p>
+<p>Didn&rsquo;t have fragment, chromesome is in one contig</p>
 
 <p><img src="https://albertsenlab.org/wp-content/uploads/2017/11/longreadsVSshortreads.png" alt="complete genome" /></p>
 
@@ -310,7 +319,7 @@ $$</p>
 
 <h3 id="2-2-demultiplexing-trimming-adapter-barcode">2.2 Demultiplexing, Trimming adapter (barcode)</h3>
 
-<p>Tools : <a href="https://github.com/rrwick/Porechop">porechop</a></p>
+<p>Tools : <a href="https://github.com/rrwick/Porechop">porechop</a>, <a href="https://github.com/rrwick/Deepbinner">deepbinner</a></p>
 
 <pre><code>$ porechop -i reads.fastq -o output.fastq # adapter trimming
 $ porechop -i reads.fastq -b output.fastq # demultiplexing 
@@ -318,7 +327,44 @@ $ porechop -i reads.fastq -b output.fastq # demultiplexing
 
 <h2 id="step-3-sequence-assembly-long-read-genome-assembly">Step 3. Sequence Assembly - Long read genome assembly</h2>
 
+<h3 id="3-1-de-novo-assembly">3.1 De novo assembly</h3>
+
+<p>Tools : <a href="https://canu.readthedocs.io/en/latest/quick-start.html">Canu</a>, <a href="https://github.com/rrwick/Unicycler">Unicycler</a>, <a href="https://github.com/fenderglass/Flye">Flye</a>, <a href="https://github.com/lbcb-sci/ra">Ra</a></p>
+
+<pre><code>$ canu -p genomename -d outdir genomeSize=4.8m -nanopore-raw read.fastq
+$ unicycler -l read.fastq -o outdir
+		...
+</code></pre>
+
+<p><img src="https://pic.pimg.tw/yourgene/1336720283-823145476_n.png" alt="de novo" /></p>
+
 <h2 id="step-4-assembly-validation">Step 4. Assembly Validation</h2>
+
+<h3 id="4-1-assembly-evaluation">4.1 Assembly evaluation</h3>
+
+<p>Tools: <a href="https://github.com/bcgsc/abyss">abyss-fac</a>, <a href="https://github.com/sanger-pathogens/assembly-stats">assembly-stats</a></p>
+
+<ol>
+<li>Total assembly size</li>
+<li>Total number of sequence</li>
+<li>Longest contig</li>
+<li>Average contig size</li>
+<li>N50</li>
+</ol>
+
+<h3 id="4-2-assembly-status-graph">4.2 Assembly status graph</h3>
+
+<p>Tools : <a href="https://rrwick.github.io/Bandage/">Bandage</a></p>
+
+<p>Is it circular or linear ?</p>
+
+<h3 id="4-3-sequence-similarity-search">4.3 Sequence Similarity Search</h3>
+
+<p>Tools : <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">BLAST</a>, <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">MiGA</a></p>
+
+<h3 id="4-4-quality-of-genomes">4.4 Quality of genomes</h3>
+
+<p>Tools : <a href="https://ecogenomics.github.io/CheckM/">Checkm</a>, <a href="https://busco.ezlab.org/">busco</a></p>
 
             </div>
         </article>
@@ -330,9 +376,9 @@ $ porechop -i reads.fastq -b output.fastq # demultiplexing
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://spaert.github.io/tags/genome-assembly">genome assembly</a></span><span class="tag"><a href="https://spaert.github.io/tags/third-generation-sequence">third generation sequence</a></span>
                 </p>
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>289 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>369 Words</p>
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>7069-19-8 17:00 &#43;0800</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>9069-19-8 21:51 &#43;0800</p>
         </div>
 
         

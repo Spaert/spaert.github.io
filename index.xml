@@ -6,10 +6,21 @@
     <description>Recent content on Hello World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Jun 2019 02:16:24 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 12 Jun 2019 21:51:13 +0800</lastBuildDate>
     
 	<atom:link href="https://spaert.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>sequence assembly</title>
+      <link>https://spaert.github.io/posts/busco/</link>
+      <pubDate>Wed, 12 Jun 2019 21:51:13 +0800</pubDate>
+      
+      <guid>https://spaert.github.io/posts/busco/</guid>
+      <description> Mapping assembly (Reference assembly) assembling reads against an existing backbone sequence
+De Novo assembly assembling reads without using a template
+OLC 1. Overlap 2. Layout 3. Consensus De-Brujin Graph Greedy </description>
+    </item>
     
     <item>
       <title>SOP of bacteria sequencing analysis</title>
@@ -23,7 +34,7 @@
  Is length read length enough ?
  Is there contamination ?
   Assembly
- Assembler tools (Canu, Unicycler, Flye, Ra …)
+ Assembler tools (Canu, Unicycler, Flye, Ra &amp;hellip;)
  Genome Polishing (Racon, medaka, nanopolish &amp;hellip;)
  Plasmid check(BLAST)
   Genome annotation
@@ -36,7 +47,7 @@
     <item>
       <title>Insights into Bacterial Genome Sequence Analysis</title>
       <link>https://spaert.github.io/posts/insights-into-bacterial-genome-sequence-analysis/</link>
-      <pubDate>Fri, 07 Jun 2019 09:00:00 +0000</pubDate>
+      <pubDate>Sun, 09 Jun 2019 21:51:13 +0800</pubDate>
       
       <guid>https://spaert.github.io/posts/insights-into-bacterial-genome-sequence-analysis/</guid>
       <description>Today goals  Introduction - A little about me, lab(gossip)

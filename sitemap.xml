@@ -3,48 +3,59 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://spaert.github.io/posts/busco/</loc>
+    <lastmod>2019-06-12T21:51:13+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://spaert.github.io/posts/sop-of-bacteria-sequencing-analysis/</loc>
     <lastmod>2019-06-11T02:16:24+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://spaert.github.io/posts/insights-into-bacterial-genome-sequence-analysis/</loc>
-    <lastmod>2019-06-07T09:00:00+00:00</lastmod>
+    <lastmod>2019-06-09T21:51:13+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://spaert.github.io/</loc>
-    <lastmod>2019-06-11T02:16:24+08:00</lastmod>
+    <lastmod>2019-06-12T21:51:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://spaert.github.io/posts/</loc>
-    <lastmod>2019-06-11T02:16:24+08:00</lastmod>
+    <lastmod>2019-06-12T21:51:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://spaert.github.io/tags/</loc>
-    <lastmod>2019-06-11T02:16:24+08:00</lastmod>
+    <lastmod>2019-06-12T21:51:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spaert.github.io/tags/de-novo/</loc>
+    <lastmod>2019-06-12T21:51:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spaert.github.io/tags/genome-assembly/</loc>
+    <lastmod>2019-06-12T21:51:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://spaert.github.io/tags/third-generation-sequence/</loc>
+    <lastmod>2019-06-12T21:51:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://spaert.github.io/tags/sequencing-analysis/</loc>
     <lastmod>2019-06-11T02:16:24+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://spaert.github.io/tags/genome-assembly/</loc>
-    <lastmod>2019-06-07T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://spaert.github.io/tags/third-generation-sequence/</loc>
-    <lastmod>2019-06-07T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
