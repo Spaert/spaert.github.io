@@ -5,7 +5,7 @@
         <description>Recent content in Posts on Hello World</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Wed, 12 Jun 2019 21:51:13 +0800</lastBuildDate>
+        <lastBuildDate>Tue, 30 Jul 2019 20:28:35 +0800</lastBuildDate>
         <atom:link href="https://spaert.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
@@ -272,6 +272,95 @@ $ unicycler -l read.fastq -o outdir
 <h3 id="4-4-quality-of-genomes">4.4 Quality of genomes</h3>
 
 <p>Tools : <a href="https://ecogenomics.github.io/CheckM/">Checkm</a>, <a href="https://busco.ezlab.org/">busco</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Summer training homework</title>
+            <link>https://spaert.github.io/posts/summertraining_homework/</link>
+            <pubDate>Tue, 30 Jul 2019 20:28:35 +0800</pubDate>
+            
+            <guid>https://spaert.github.io/posts/summertraining_homework/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Genome alignement and tools</title>
+            <link>https://spaert.github.io/posts/alignment/</link>
+            <pubDate>Tue, 30 Jul 2019 18:42:10 +0800</pubDate>
+            
+            <guid>https://spaert.github.io/posts/alignment/</guid>
+            <description>Local alignment Blast (Basic Local Alignment Search Tool ) Is an algorithm for comparing primary biological sequence information
+   Program Query Search Database     blastn DNA -&amp;gt; DNA   blastp protein -&amp;gt; protein   blastx DNA -&amp;gt; protein     Bit score : The higher the bit-score, the better the sequence similarity Identity : $$identity = \frac{match}{total} $$
+ATCTG || || identity : 80% ATATG  E-value : The smaller the E-value, the better the match.</description>
+            <content type="html"><![CDATA[
+
+<h1 id="local-alignment">Local alignment</h1>
+
+<p><img src="/img/local alignment.png" alt="local alignemnt" /></p>
+
+<h2 id="blast-basic-local-alignment-search-tool">Blast (Basic Local Alignment Search Tool )</h2>
+
+<p>Is an algorithm for comparing primary biological sequence information</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Program</th>
+<th align="center">Query</th>
+<th align="center">Search</th>
+<th align="center">Database</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">blastn</td>
+<td align="center">DNA</td>
+<td align="center">-&gt;</td>
+<td align="center">DNA</td>
+</tr>
+
+<tr>
+<td align="center">blastp</td>
+<td align="center">protein</td>
+<td align="center">-&gt;</td>
+<td align="center">protein</td>
+</tr>
+
+<tr>
+<td align="center">blastx</td>
+<td align="center">DNA</td>
+<td align="center">-&gt;</td>
+<td align="center">protein</td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>Bit score :
+<font color="#dd0000"><em>The higher the bit-score, the better the sequence similarity</em></font></li>
+
+<li><p>Identity :
+$$identity = \frac{match}{total} $$</p>
+
+<pre><code>ATCTG
+|| ||   identity : 80%
+ATATG
+</code></pre></li>
+
+<li><p>E-value :
+<font color="#dd0000"><em>The smaller the E-value, the better the match.</em></font></p></li>
+</ul>
+
+<p>$$Eval(S)= K <em>M</em> N * e^{-lambda*S}$$</p>
+
+<h1 id="global-alignment">Global alignment</h1>
+
+<p><img src="/img/global alignment.png" alt="global alignment" /></p>
+
+<h2 id="minimap2">Minimap2</h2>
 ]]></content>
         </item>
         

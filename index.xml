@@ -6,7 +6,7 @@
     <description>Recent content on Hello World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Jun 2019 21:51:13 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jul 2019 20:28:35 +0800</lastBuildDate>
     
 	<atom:link href="https://spaert.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -55,6 +55,26 @@ OLC  Overlap
       <description>Today goals  Things you should know before assembly  Fastq format Fasta format GC- content Status of genome  Step to bacterial sequencing analysis  Things you should know before assembly Fastq format start with @
 @cc3e68c4-b53d-43da-be7e-b961113007e2 -&amp;gt; sequence name ATCCGGAATCGGTTACTGTTGGGAACCTTTGC -&amp;gt; sequence + -&amp;gt; quality line break #%(*))++.2/148447;7+001./18-7-,,30&amp;amp;*2 -&amp;gt; quality score  Fasta format start with &amp;gt;
 &amp;gt;tig00000001	-&amp;gt; sequence name TGATAAAAGTATTCATATAATCTCCTATCATTTCAAAATTTAAT -&amp;gt; sequence &amp;gt;tig00000002	ATATTAGTGTGTCTATTTTATGGGGCTAGGAAAGGAGGTACATT  GC-content the percentage of nitrogenous bases on a DNA or RNA molecule that are either guanine or cytosine $$ \frac{G+C}{A+T+G+C} \times 100 \% $$</description>
+    </item>
+    
+    <item>
+      <title>Summer training homework</title>
+      <link>https://spaert.github.io/posts/summertraining_homework/</link>
+      <pubDate>Tue, 30 Jul 2019 20:28:35 +0800</pubDate>
+      
+      <guid>https://spaert.github.io/posts/summertraining_homework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genome alignement and tools</title>
+      <link>https://spaert.github.io/posts/alignment/</link>
+      <pubDate>Tue, 30 Jul 2019 18:42:10 +0800</pubDate>
+      
+      <guid>https://spaert.github.io/posts/alignment/</guid>
+      <description>Local alignment Blast (Basic Local Alignment Search Tool ) Is an algorithm for comparing primary biological sequence information
+   Program Query Search Database     blastn DNA -&amp;gt; DNA   blastp protein -&amp;gt; protein   blastx DNA -&amp;gt; protein     Bit score : The higher the bit-score, the better the sequence similarity Identity : $$identity = \frac{match}{total} $$
+ATCTG || || identity : 80% ATATG  E-value : The smaller the E-value, the better the match.</description>
     </item>
     
     <item>
