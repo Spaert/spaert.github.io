@@ -1,0 +1,431 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Hello World</title>
+        <link>https://spaert.github.io/posts/</link>
+        <description>Recent content in Posts on Hello World</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Tue, 30 Jul 2019 20:28:35 +0800</lastBuildDate>
+        <atom:link href="https://spaert.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>sequence assembly</title>
+            <link>https://spaert.github.io/posts/assembly/</link>
+            <pubDate>Wed, 12 Jun 2019 21:51:13 +0800</pubDate>
+            
+            <guid>https://spaert.github.io/posts/assembly/</guid>
+            <description> Mapping assembly (Reference assembly) assembling reads against an existing backbone sequence
+De Novo assembly assembling reads without using a template
+OLC  Overlap
+ Layout
+ Consensus De-Brujin Graph   Greedy </description>
+            <content type="html"><![CDATA[
+
+<h1 id="mapping-assembly-reference-assembly">Mapping assembly (Reference  assembly)</h1>
+
+<p>assembling reads against an <strong>existing backbone sequence</strong></p>
+
+<h1 id="de-novo-assembly">De Novo assembly</h1>
+
+<p>assembling reads <strong>without using a template</strong></p>
+
+<h2 id="olc">OLC</h2>
+
+<ol>
+<li><p>Overlap</p></li>
+
+<li><p>Layout</p></li>
+
+<li><p>Consensus
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/OLC%2COverlap-Layout-consensus.png/794px-OLC%2COverlap-Layout-consensus.png" alt="OLC assembly" /></p>
+
+<h2 id="de-brujin-graph">De-Brujin Graph</h2>
+
+<p><img src="https://homolog.us/Tutorials/Tut-Img/Set1/fig5.png" alt="de-brujin" /></p></li>
+</ol>
+
+<h2 id="greedy">Greedy</h2>
+]]></content>
+        </item>
+        
+        <item>
+            <title>SOP of bacteria sequencing analysis</title>
+            <link>https://spaert.github.io/posts/sop-of-bacteria-sequencing-analysis/</link>
+            <pubDate>Tue, 11 Jun 2019 02:16:24 +0800</pubDate>
+            
+            <guid>https://spaert.github.io/posts/sop-of-bacteria-sequencing-analysis/</guid>
+            <description>Quality control
+ QC tools (FastQC, MultiQC &amp;hellip;)
+ Is coverage enough ?
+ Is length read length enough ?
+ Is there contamination ?
+  Assembly
+ Assembler tools (Canu, Unicycler, Flye, Ra &amp;hellip;)
+ Genome Polishing (Racon, medaka, nanopolish &amp;hellip;)
+ Plasmid check(BLAST)
+  Genome annotation
+ NCBI annotation
+ COG analysis for protein functions
+  16S rRNA/whole genome phylogenetic trees
+ Antibiotic-resistant gene prediction</description>
+            <content type="html"><![CDATA[<ol>
+<li><p>Quality control</p>
+
+<ul>
+<li><p>QC tools (<a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">FastQC</a>, <a href="https://multiqc.info/">MultiQC</a> &hellip;)</p></li>
+
+<li><p>Is coverage enough ?</p></li>
+
+<li><p>Is length  read length enough ?</p></li>
+
+<li><p>Is there contamination ?</p></li>
+</ul></li>
+
+<li><p>Assembly</p>
+
+<ul>
+<li><p>Assembler tools (<a href="https://canu.readthedocs.io/en/latest/quick-start.html">Canu</a>, <a href="https://github.com/rrwick/Unicycler">Unicycler</a>, <a href="https://github.com/fenderglass/Flye">Flye</a>, <a href="https://github.com/lbcb-sci/ra">Ra</a> &hellip;)</p></li>
+
+<li><p>Genome Polishing (<a href="https://github.com/isovic/racon">Racon</a>,  <a href="https://nanoporetech.github.io/medaka/index.html">medaka</a>, <a href="https://nanopolish.readthedocs.io/en/latest/quickstart_consensus.html">nanopolish</a> &hellip;)</p></li>
+
+<li><p>Plasmid check(<a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">BLAST</a>)</p></li>
+</ul></li>
+
+<li><p>Genome annotation</p>
+
+<ul>
+<li><p>NCBI annotation</p></li>
+
+<li><p>COG analysis for protein functions</p></li>
+</ul></li>
+
+<li><p>16S rRNA/whole genome phylogenetic trees</p></li>
+
+<li><p>Antibiotic-resistant gene prediction</p></li>
+
+<li><p>Virulence gene prediction</p></li>
+</ol>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Insights into Bacterial Genome Sequence Analysis</title>
+            <link>https://spaert.github.io/posts/insights-into-bacterial-genome-sequence-analysis/</link>
+            <pubDate>Sun, 09 Jun 2019 21:51:13 +0800</pubDate>
+            
+            <guid>https://spaert.github.io/posts/insights-into-bacterial-genome-sequence-analysis/</guid>
+            <description>Today goals  Things you should know before assembly  Fastq format Fasta format GC- content Status of genome  Step to bacterial sequencing analysis  Things you should know before assembly Fastq format start with @
+@cc3e68c4-b53d-43da-be7e-b961113007e2 -&amp;gt; sequence name ATCCGGAATCGGTTACTGTTGGGAACCTTTGC -&amp;gt; sequence + -&amp;gt; quality line break #%(*))++.2/148447;7+001./18-7-,,30&amp;amp;*2 -&amp;gt; quality score  Fasta format start with &amp;gt;
+&amp;gt;tig00000001	-&amp;gt; sequence name TGATAAAAGTATTCATATAATCTCCTATCATTTCAAAATTTAAT -&amp;gt; sequence &amp;gt;tig00000002	ATATTAGTGTGTCTATTTTATGGGGCTAGGAAAGGAGGTACATT  GC-content the percentage of nitrogenous bases on a DNA or RNA molecule that are either guanine or cytosine $$ \frac{G+C}{A+T+G+C} \times 100 \% $$</description>
+            <content type="html"><![CDATA[
+
+<h1 id="today-goals">Today goals</h1>
+
+<ul>
+<li>Things you should know before assembly
+
+<ol>
+<li>Fastq format</li>
+<li>Fasta format</li>
+<li>GC- content</li>
+<li>Status of genome</li>
+</ol></li>
+<li>Step to bacterial sequencing analysis</li>
+</ul>
+
+<h1 id="things-you-should-know-before-assembly">Things you should know before assembly</h1>
+
+<h2 id="fastq-format">Fastq format</h2>
+
+<p>start with <code>@</code></p>
+
+<pre><code>@cc3e68c4-b53d-43da-be7e-b961113007e2          -&gt; sequence name
+ATCCGGAATCGGTTACTGTTGGGAACCTTTGC               -&gt; sequence
++                                              -&gt; quality line break
+#%(*))++.2/148447;7+001./18-7-,,30&amp;*2          -&gt; quality score
+</code></pre>
+
+<h2 id="fasta-format">Fasta format</h2>
+
+<p>start with <code>&gt;</code></p>
+
+<pre><code>&gt;tig00000001				           -&gt; sequence name
+TGATAAAAGTATTCATATAATCTCCTATCATTTCAAAATTTAAT   -&gt; sequence 
+&gt;tig00000002																	 
+ATATTAGTGTGTCTATTTTATGGGGCTAGGAAAGGAGGTACATT
+</code></pre>
+
+<h2 id="gc-content">GC-content</h2>
+
+<p>the percentage of <a href="https://en.wikipedia.org/wiki/Nitrogenous_bases">nitrogenous bases</a> on a <a href="https://en.wikipedia.org/wiki/DNA">DNA</a> or <a href="https://en.wikipedia.org/wiki/RNA">RNA</a> molecule that are either <a href="https://en.wikipedia.org/wiki/Guanine">guanine</a> or <a href="https://en.wikipedia.org/wiki/Cytosine">cytosine</a>
+$$
+\frac{G+C}{A+T+G+C} \times 100 \%
+$$</p>
+
+<h2 id="satuts-of-genome">Satuts of genome</h2>
+
+<p><img src="http://ecoevo.unit.oist.jp/lab/wp-content/uploads/2013/08/GenomeAssembly.png" alt="genome status" /></p>
+
+<h3 id="1-contig">1. contig</h3>
+
+<p>A <strong>contig</strong>  is a set of overlapping DNA segments that together represent a <a href="https://en.wikipedia.org/wiki/Consensus_sequence">consensus region of DNA</a>.</p>
+
+<h3 id="2-scaffold">2. scaffold</h3>
+
+<p>To bridge the gaps between the two contigs called scaffold.</p>
+
+<h3 id="3-complete">3. complete</h3>
+
+<p>Didn&rsquo;t have fragment, chromesome is in one contig</p>
+
+<p><img src="https://albertsenlab.org/wp-content/uploads/2017/11/longreadsVSshortreads.png" alt="complete genome" /></p>
+
+<h1 id="step-to-bacterial-sequencing-analysis">Step to bacterial sequencing analysis</h1>
+
+<p><img src="https://f1000researchdata.s3.amazonaws.com/manuscripts/14771/860b5457-c42e-40df-9829-10ecb2c4b092_figure2.gif" alt="workflow" /></p>
+
+<h2 id="step-1-quality-control-assessing-the-quality-of-tgs">Step 1. Quality Control - Assessing the quality of TGS</h2>
+
+<h3 id="1-1-checking-raw-read-statistics">1.1 Checking raw read statistics</h3>
+
+<p>Tools : <a href="https://github.com/bcgsc/abyss">abyss-fac</a></p>
+
+<pre><code>$ abyss-fac -t 1 read.fastq contig.fasta
+</code></pre>
+
+<p><img src="/img/read-abyssfac.png" alt="read-abyssfac" /></p>
+
+<ul>
+<li><p>n : Number of raw read</p></li>
+
+<li><p>N50 : A value that present 50% of sorted read set</p></li>
+</ul>
+
+<p><img src="https://i0.wp.com/www.molecularecologist.com/wp-content/uploads/2017/03/Figure1b.jpg?w=699&amp;ssl=1" alt="Alt text" /></p>
+
+<ul>
+<li><p>Max: longest read length</p></li>
+
+<li><p>Sum: Total read length</p></li>
+</ul>
+
+<h3 id="1-2-qc-report">1.2 QC report</h3>
+
+<p>Tools : <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">FastQC</a></p>
+
+<pre><code>$ fastqc -f read.fastq -o outdir
+</code></pre>
+
+<h2 id="step-2-trimming-filtering-data-preprocessing-of-raw-data-optional">Step 2. Trimming Filtering Data - Preprocessing of raw data (optional)</h2>
+
+<h3 id="2-1-filter-raw-read">2.1 Filter raw read</h3>
+
+<p>Tools : <a href="https://github.com/rrwick/Filtlong">filtlong</a></p>
+
+<p>Usually used in <strong>coverage too high</strong>, <strong>trim too short reads</strong>, and want to <strong>keep raw read in between a range</strong></p>
+
+<h3 id="2-2-demultiplexing-trimming-adapter-barcode">2.2 Demultiplexing, Trimming adapter (barcode)</h3>
+
+<p>Tools : <a href="https://github.com/rrwick/Porechop">porechop</a>, <a href="https://github.com/rrwick/Deepbinner">deepbinner</a></p>
+
+<pre><code>$ porechop -i reads.fastq -o output.fastq # adapter trimming
+$ porechop -i reads.fastq -b output.fastq # demultiplexing 
+</code></pre>
+
+<h2 id="step-3-sequence-assembly-long-read-genome-assembly">Step 3. Sequence Assembly - Long read genome assembly</h2>
+
+<h3 id="3-1-de-novo-assembly">3.1 De novo assembly</h3>
+
+<p>Tools : <a href="https://canu.readthedocs.io/en/latest/quick-start.html">Canu</a>, <a href="https://github.com/rrwick/Unicycler">Unicycler</a>, <a href="https://github.com/fenderglass/Flye">Flye</a>, <a href="https://github.com/lbcb-sci/ra">Ra</a></p>
+
+<pre><code>$ canu -p genomename -d outdir genomeSize=4.8m -nanopore-raw read.fastq
+$ unicycler -l read.fastq -o outdir
+		...
+</code></pre>
+
+<p><img src="https://pic.pimg.tw/yourgene/1336720283-823145476_n.png" alt="de novo" /></p>
+
+<h2 id="step-4-assembly-validation">Step 4. Assembly Validation</h2>
+
+<h3 id="4-1-assembly-evaluation">4.1 Assembly evaluation</h3>
+
+<p>Tools: <a href="https://github.com/bcgsc/abyss">abyss-fac</a>, <a href="https://github.com/sanger-pathogens/assembly-stats">assembly-stats</a></p>
+
+<ol>
+<li>Total assembly size</li>
+<li>Total number of sequence</li>
+<li>Longest contig</li>
+<li>Average contig size</li>
+<li>N50</li>
+</ol>
+
+<h3 id="4-2-assembly-status-graph">4.2 Assembly status graph</h3>
+
+<p>Tools : <a href="https://rrwick.github.io/Bandage/">Bandage</a></p>
+
+<p>Is it circular or linear ?</p>
+
+<h3 id="4-3-sequence-similarity-search">4.3 Sequence Similarity Search</h3>
+
+<p>Tools : <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">BLAST</a>, <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">MiGA</a></p>
+
+<h3 id="4-4-quality-of-genomes">4.4 Quality of genomes</h3>
+
+<p>Tools : <a href="https://ecogenomics.github.io/CheckM/">Checkm</a>, <a href="https://busco.ezlab.org/">busco</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Summer training homework</title>
+            <link>https://spaert.github.io/posts/summertraining_homework/</link>
+            <pubDate>Tue, 30 Jul 2019 20:28:35 +0800</pubDate>
+            
+            <guid>https://spaert.github.io/posts/summertraining_homework/</guid>
+            <description>組裝 分別使用Canu,Flye, Ra, Shasta組裝ecoli k-12 標準菌株並製作完整組裝報告
+菌株位置：
+/bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1D.trim.fastq   Step1. Run abyss-fac for raw read Step2. Run fastqc Step3. Run Assembler (要計算時間) Step4. Analysis result
+ run blast run bandage for contig status run abyss-fac for contig  Step5. 製作ppt
+  寫一個python 程式計算gc content  Step1. 至ncbi 抓取菌株 Step2. 程式步驟
+ 讀入fasta檔 計算sequence的gc content 可使用(SeqIO做序列處理) 執行程式必須為此方式
+&amp;gt; python yourpyscript.py ecoli.fasta output : gc-content: XX.X%  hint1: import sys with open(sys.</description>
+            <content type="html"><![CDATA[
+
+<h1 id="組裝">組裝</h1>
+
+<p>分別使用<a href="https://github.com/marbl/canu">Canu</a>,<a href="https://github.com/fenderglass/Flye">Flye</a>, <a href="https://github.com/lbcb-sci/ra">Ra</a>, <a href="https://chanzuckerberg.github.io/shasta/QuickStart.html">Shasta</a>組裝ecoli k-12 標準菌株並製作完整組裝報告</p>
+
+<p>菌株位置：</p>
+
+<pre><code>/bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1D.trim.fastq
+</code></pre>
+
+<ul>
+<li>Step1. Run abyss-fac for raw read</li>
+<li>Step2. Run fastqc</li>
+<li>Step3. Run Assembler (要計算時間)</li>
+
+<li><p>Step4. Analysis result</p>
+
+<ol>
+<li>run blast</li>
+<li>run bandage for contig status</li>
+<li>run abyss-fac for contig</li>
+</ol></li>
+
+<li><p>Step5. 製作ppt</p></li>
+</ul>
+
+<h1 id="寫一個python-程式計算gc-content">寫一個python 程式計算gc content</h1>
+
+<ul>
+<li>Step1. 至ncbi 抓取<a href="https://www.ncbi.nlm.nih.gov/genome/?term=Escherichia+coli">菌株</a></li>
+
+<li><p>Step2. 程式步驟</p>
+
+<ol>
+<li>讀入fasta檔</li>
+<li>計算sequence的gc content 可使用(<a href="https://biopython.org/wiki/SeqIO">SeqIO</a>做序列處理)</li>
+
+<li><p>執行程式必須為此方式</p>
+
+<pre><code>&gt; python yourpyscript.py  ecoli.fasta
+output : 
+	gc-content: XX.X%
+</code></pre>
+
+<pre><code>hint1:
+import sys
+with open(sys.argv[1],'r') as f:
+</code></pre>
+
+<pre><code>hint2:
+import sys
+from Bio import SeqIO
+record = SeqIO.read(sys.argv[1], &quot;fasta&quot;)
+</code></pre></li>
+</ol></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Genome alignement and tools</title>
+            <link>https://spaert.github.io/posts/alignment/</link>
+            <pubDate>Tue, 30 Jul 2019 18:42:10 +0800</pubDate>
+            
+            <guid>https://spaert.github.io/posts/alignment/</guid>
+            <description>Local alignment Blast (Basic Local Alignment Search Tool ) Is an algorithm for comparing primary biological sequence information
+   Program Query Search Database     blastn DNA -&amp;gt; DNA   blastp protein -&amp;gt; protein   blastx DNA -&amp;gt; protein     Bit score : The higher the bit-score, the better the sequence similarity Identity : $$identity = \frac{match}{total} $$
+ATCTG || || identity : 80% ATATG  E-value : The smaller the E-value, the better the match.</description>
+            <content type="html"><![CDATA[
+
+<h1 id="local-alignment">Local alignment</h1>
+
+<p><img src="/img/local alignment.png" alt="local alignemnt" /></p>
+
+<h2 id="blast-basic-local-alignment-search-tool">Blast (Basic Local Alignment Search Tool )</h2>
+
+<p>Is an algorithm for comparing primary biological sequence information</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Program</th>
+<th align="center">Query</th>
+<th align="center">Search</th>
+<th align="center">Database</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">blastn</td>
+<td align="center">DNA</td>
+<td align="center">-&gt;</td>
+<td align="center">DNA</td>
+</tr>
+
+<tr>
+<td align="center">blastp</td>
+<td align="center">protein</td>
+<td align="center">-&gt;</td>
+<td align="center">protein</td>
+</tr>
+
+<tr>
+<td align="center">blastx</td>
+<td align="center">DNA</td>
+<td align="center">-&gt;</td>
+<td align="center">protein</td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>Bit score :
+<font color="#dd0000"><em>The higher the bit-score, the better the sequence similarity</em></font></li>
+
+<li><p>Identity :
+$$identity = \frac{match}{total} $$</p>
+
+<pre><code>ATCTG
+|| ||   identity : 80%
+ATATG
+</code></pre></li>
+
+<li><p>E-value :
+<font color="#dd0000"><em>The smaller the E-value, the better the match.</em></font></p></li>
+</ul>
+
+<p>$$Eval(S)= K <em>M</em> N * e^{-lambda*S}$$</p>
+
+<h1 id="global-alignment">Global alignment</h1>
+
+<p><img src="/img/global alignment.png" alt="global alignment" /></p>
+
+<h2 id="minimap2">Minimap2</h2>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>
