@@ -9,11 +9,13 @@
 <meta name="description"
     content="組裝 分別使用Canu,Flye, Ra, Shasta組裝ecoli k-12 標準菌株並製作完整組裝報告
 菌株位置：
-/bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1D.trim.fastq   Step1. Run abyss-fac for raw read Step2. Run fastqc Step3. Run Assembler (要計算時間) Step4. Analysis result
+/bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1.5G.fastq   Step1. Run abyss-fac for raw read Step2. Run fastqc
+/bip6_disk/shiuanrung107/fastqc/FastQC/fastqc /bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1.5G.fastq  Step3. Run Assembler (要計算時間)
+ Step4. Analysis result
  run blast run bandage for contig status run abyss-fac for contig  Step5. 製作ppt
   寫一個python 程式計算gc content  Step1. 至ncbi 抓取菌株 Step2. 程式步驟
  讀入fasta檔 計算sequence的gc content 可使用(SeqIO做序列處理) 執行程式必須為此方式
-&amp;gt; python yourpyscript.py ecoli.fasta output : gc-content: XX.X%  hint1: import sys with open(sys." />
+&amp;gt; python yourpyscript.py ecoli.fasta output : gc-content: XX." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="https://spaert.github.io/posts/summertraining_homework/" />
@@ -46,16 +48,18 @@
 <meta itemprop="name" content="Summer training homework">
 <meta itemprop="description" content="組裝 分別使用Canu,Flye, Ra, Shasta組裝ecoli k-12 標準菌株並製作完整組裝報告
 菌株位置：
-/bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1D.trim.fastq   Step1. Run abyss-fac for raw read Step2. Run fastqc Step3. Run Assembler (要計算時間) Step4. Analysis result
+/bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1.5G.fastq   Step1. Run abyss-fac for raw read Step2. Run fastqc
+/bip6_disk/shiuanrung107/fastqc/FastQC/fastqc /bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1.5G.fastq  Step3. Run Assembler (要計算時間)
+ Step4. Analysis result
  run blast run bandage for contig status run abyss-fac for contig  Step5. 製作ppt
   寫一個python 程式計算gc content  Step1. 至ncbi 抓取菌株 Step2. 程式步驟
  讀入fasta檔 計算sequence的gc content 可使用(SeqIO做序列處理) 執行程式必須為此方式
-&gt; python yourpyscript.py ecoli.fasta output : gc-content: XX.X%  hint1: import sys with open(sys.">
+&gt; python yourpyscript.py ecoli.fasta output : gc-content: XX.">
 
 
 <meta itemprop="datePublished" content="2019-07-30T20:28:35&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-30T20:28:35&#43;08:00" />
-<meta itemprop="wordCount" content="76">
+<meta itemprop="wordCount" content="78">
 
 
 
@@ -66,11 +70,13 @@
 <meta name="twitter:title" content="Summer training homework"/>
 <meta name="twitter:description" content="組裝 分別使用Canu,Flye, Ra, Shasta組裝ecoli k-12 標準菌株並製作完整組裝報告
 菌株位置：
-/bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1D.trim.fastq   Step1. Run abyss-fac for raw read Step2. Run fastqc Step3. Run Assembler (要計算時間) Step4. Analysis result
+/bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1.5G.fastq   Step1. Run abyss-fac for raw read Step2. Run fastqc
+/bip6_disk/shiuanrung107/fastqc/FastQC/fastqc /bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1.5G.fastq  Step3. Run Assembler (要計算時間)
+ Step4. Analysis result
  run blast run bandage for contig status run abyss-fac for contig  Step5. 製作ppt
   寫一個python 程式計算gc content  Step1. 至ncbi 抓取菌株 Step2. 程式步驟
  讀入fasta檔 計算sequence的gc content 可使用(SeqIO做序列處理) 執行程式必須為此方式
-&gt; python yourpyscript.py ecoli.fasta output : gc-content: XX.X%  hint1: import sys with open(sys."/>
+&gt; python yourpyscript.py ecoli.fasta output : gc-content: XX."/>
 
 
 
@@ -152,13 +158,18 @@
 
 <p>菌株位置：</p>
 
-<pre><code>/bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1D.trim.fastq
+<pre><code>/bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1.5G.fastq
 </code></pre>
 
 <ul>
 <li>Step1. Run abyss-fac for raw read</li>
-<li>Step2. Run fastqc</li>
-<li>Step3. Run Assembler (要計算時間)</li>
+
+<li><p>Step2. Run fastqc</p>
+
+<pre><code>/bip6_disk/shiuanrung107/fastqc/FastQC/fastqc /bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1.5G.fastq
+</code></pre></li>
+
+<li><p>Step3. Run Assembler (要計算時間)</p></li>
 
 <li><p>Step4. Analysis result</p>
 
@@ -209,7 +220,7 @@ record = SeqIO.read(sys.argv[1], &quot;fasta&quot;)
 
         <div class="post-info">
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>76 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>78 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-07-30 20:28 &#43;0800</p>
         </div>
