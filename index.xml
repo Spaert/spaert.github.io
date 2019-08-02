@@ -67,11 +67,10 @@ OLC  Overlap
 菌株位置：
 /bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1.5G.fastq   Step1. Run abyss-fac for raw read Step2. Run fastqc
 /bip6_disk/shiuanrung107/fastqc/FastQC/fastqc /bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1.5G.fastq  Step3. Run Assembler (要計算時間)
- Step4. Analysis result
+/usr/bin/time -o time.txt -p nohup yourcommand &amp;amp;  Step4. Analysis result
  run blast run bandage for contig status run abyss-fac for contig  Step5. 製作ppt
   寫一個python 程式計算gc content  Step1. 至ncbi 抓取菌株 Step2. 程式步驟
- 讀入fasta檔 計算sequence的gc content 可使用(SeqIO做序列處理) 執行程式必須為此方式
-&amp;gt; python yourpyscript.py ecoli.fasta output : gc-content: XX.</description>
+ 讀入fasta檔 計算sequence的gc content 可使用(SeqIO做序列處理) 執行程式必須為此方式</description>
     </item>
     
     <item>
